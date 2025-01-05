@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/takapic/static/css/main.9e8f83cb.css",
+    "main.js": "/takapic/static/js/main.f3a31347.js",
+    "static/media/Welcome.mp4": "/takapic/static/media/Welcome.83afffe2059989f42264.mp4",
+    "static/media/Welcomephone.mp4": "/takapic/static/media/Welcomephone.83afffe2059989f42264.mp4",
+    "index.html": "/takapic/index.html",
+    "main.9e8f83cb.css.map": "/takapic/static/css/main.9e8f83cb.css.map",
+    "main.f3a31347.js.map": "/takapic/static/js/main.f3a31347.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9e8f83cb.css",
+    "static/js/main.f3a31347.js"
+  ]
+}
