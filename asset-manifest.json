@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/TAKAPIC/static/css/main.9e8f83cb.css",
-    "main.js": "/TAKAPIC/static/js/main.3d9b807d.js",
-    "static/media/Welcome.mp4": "/TAKAPIC/static/media/Welcome.83afffe2059989f42264.mp4",
-    "static/media/Welcomephone.mp4": "/TAKAPIC/static/media/Welcomephone.83afffe2059989f42264.mp4",
-    "index.html": "/TAKAPIC/index.html",
-    "main.9e8f83cb.css.map": "/TAKAPIC/static/css/main.9e8f83cb.css.map",
-    "main.3d9b807d.js.map": "/TAKAPIC/static/js/main.3d9b807d.js.map"
+    "main.css": "/static/css/main.9e8f83cb.css",
+    "main.js": "/static/js/main.043e8730.js",
+    "static/media/Welcome.mp4": "/static/media/Welcome.83afffe2059989f42264.mp4",
+    "static/media/Welcomephone.mp4": "/static/media/Welcomephone.83afffe2059989f42264.mp4",
+    "index.html": "/index.html",
+    "main.9e8f83cb.css.map": "/static/css/main.9e8f83cb.css.map",
+    "main.043e8730.js.map": "/static/js/main.043e8730.js.map"
   },
   "entrypoints": [
     "static/css/main.9e8f83cb.css",
-    "static/js/main.3d9b807d.js"
+    "static/js/main.043e8730.js"
   ]
 }
