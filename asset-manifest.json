@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.6ecd1fe2.css",
+    "main.css": "/static/css/main.c2f06b43.css",
     "main.js": "/static/js/main.e3609175.js",
     "static/media/Welcome.mp4": "/static/media/Welcome.155596c5c998938fa7ea.mp4",
     "static/media/template.png": "/static/media/template.6db556d3301a5e408567.png",
@@ -13,11 +13,11 @@
     "static/media/romcom.svg": "/static/media/romcom.0dd5a85b5c8279bd163e115599e6b9ef.svg",
     "static/media/adventure.svg": "/static/media/adventure.9496d279493c9a43d11bcf7391f92eeb.svg",
     "index.html": "/index.html",
-    "main.6ecd1fe2.css.map": "/static/css/main.6ecd1fe2.css.map",
+    "main.c2f06b43.css.map": "/static/css/main.c2f06b43.css.map",
     "main.e3609175.js.map": "/static/js/main.e3609175.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ecd1fe2.css",
+    "static/css/main.c2f06b43.css",
     "static/js/main.e3609175.js"
   ]
 }
