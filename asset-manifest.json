@@ -1,10 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.53522f85.css",
-    "main.js": "/static/js/main.73cc2db7.js",
+    "main.css": "/static/css/main.a3c2bcb0.css",
+    "main.js": "/static/js/main.75786243.js",
     "static/media/Welcome.mp4": "/static/media/Welcome.f3da1846f9dc9d89a02e.mp4",
     "static/media/Welcomephone.mp4": "/static/media/Welcomephone.ee5875f9c366fd14b70b.mp4",
     "static/media/template.png": "/static/media/template.6db556d3301a5e408567.png",
+    "static/media/fantasy.mp4": "/static/media/fantasy.ac0655da07c3a6d38e22.mp4",
+    "static/media/adventure.mp4": "/static/media/adventure.7b77a900fedcdfbf88ab.mp4",
+    "static/media/scifi.mp4": "/static/media/scifi.78363c1ad5ec2c5242bf.mp4",
+    "static/media/western.mp4": "/static/media/western.efb6c01ee1032ca5e691.mp4",
     "static/media/LogoT.png": "/static/media/LogoT.d7ad3c5b56e3fc84abbf.png",
     "static/media/scifi.svg": "/static/media/scifi.6d04231a90283cc15a86ea709a268bff.svg",
     "static/media/horror.svg": "/static/media/horror.f74767cbc50abe84232f94f4ba9a8299.svg",
@@ -13,11 +17,11 @@
     "static/media/romcom.svg": "/static/media/romcom.0dd5a85b5c8279bd163e115599e6b9ef.svg",
     "static/media/adventure.svg": "/static/media/adventure.9496d279493c9a43d11bcf7391f92eeb.svg",
     "index.html": "/index.html",
-    "main.53522f85.css.map": "/static/css/main.53522f85.css.map",
-    "main.73cc2db7.js.map": "/static/js/main.73cc2db7.js.map"
+    "main.a3c2bcb0.css.map": "/static/css/main.a3c2bcb0.css.map",
+    "main.75786243.js.map": "/static/js/main.75786243.js.map"
   },
   "entrypoints": [
-    "static/css/main.53522f85.css",
-    "static/js/main.73cc2db7.js"
+    "static/css/main.a3c2bcb0.css",
+    "static/js/main.75786243.js"
   ]
 }
