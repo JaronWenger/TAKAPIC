@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.692122cb.css",
-    "main.js": "/static/js/main.8ccab56f.js",
+    "main.css": "/static/css/main.ab3c2517.css",
+    "main.js": "/static/js/main.23a533d3.js",
     "static/media/Welcome.mp4": "/static/media/Welcome.f3da1846f9dc9d89a02e.mp4",
+    "static/media/Add.mp4": "/static/media/Add.84fd9e66bb155e942454.mp4",
     "static/media/Welcomephone.mp4": "/static/media/Welcomephone.ee5875f9c366fd14b70b.mp4",
     "static/media/template.png": "/static/media/template.6db556d3301a5e408567.png",
+    "static/media/example.png": "/static/media/example.ff05b5d5c5662cb923bb.png",
     "static/media/fantasy.mp4": "/static/media/fantasy.ac0655da07c3a6d38e22.mp4",
     "static/media/adventure.mp4": "/static/media/adventure.7b77a900fedcdfbf88ab.mp4",
     "static/media/scifi.mp4": "/static/media/scifi.78363c1ad5ec2c5242bf.mp4",
@@ -17,11 +19,11 @@
     "static/media/romcom.svg": "/static/media/romcom.0dd5a85b5c8279bd163e115599e6b9ef.svg",
     "static/media/adventure.svg": "/static/media/adventure.9496d279493c9a43d11bcf7391f92eeb.svg",
     "index.html": "/index.html",
-    "main.692122cb.css.map": "/static/css/main.692122cb.css.map",
-    "main.8ccab56f.js.map": "/static/js/main.8ccab56f.js.map"
+    "main.ab3c2517.css.map": "/static/css/main.ab3c2517.css.map",
+    "main.23a533d3.js.map": "/static/js/main.23a533d3.js.map"
   },
   "entrypoints": [
-    "static/css/main.692122cb.css",
-    "static/js/main.8ccab56f.js"
+    "static/css/main.ab3c2517.css",
+    "static/js/main.23a533d3.js"
   ]
 }
