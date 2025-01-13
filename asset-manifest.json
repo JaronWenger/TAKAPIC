@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.28679c5d.css",
-    "main.js": "/static/js/main.b7467b58.js",
-    "static/media/Welcome.mp4": "/static/media/Welcome.f3da1846f9dc9d89a02e.mp4",
+    "main.js": "/static/js/main.37de7a58.js",
     "static/media/Add.mp4": "/static/media/Add.84fd9e66bb155e942454.mp4",
-    "static/media/Welcomephone.mp4": "/static/media/Welcomephone.ee5875f9c366fd14b70b.mp4",
+    "static/media/Welcome.mp4": "/static/media/Welcome.76e2c7e16f01f9171acb.mp4",
+    "static/media/Welcomephone.mp4": "/static/media/Welcomephone.c2f0a24e0166d411daf8.mp4",
     "static/media/template.png": "/static/media/template.6db556d3301a5e408567.png",
     "static/media/fantasy.mp4": "/static/media/fantasy.ac0655da07c3a6d38e22.mp4",
     "static/media/adventure.mp4": "/static/media/adventure.7b77a900fedcdfbf88ab.mp4",
@@ -20,10 +20,10 @@
     "static/media/adventure.svg": "/static/media/adventure.9496d279493c9a43d11bcf7391f92eeb.svg",
     "index.html": "/index.html",
     "main.28679c5d.css.map": "/static/css/main.28679c5d.css.map",
-    "main.b7467b58.js.map": "/static/js/main.b7467b58.js.map"
+    "main.37de7a58.js.map": "/static/js/main.37de7a58.js.map"
   },
   "entrypoints": [
     "static/css/main.28679c5d.css",
-    "static/js/main.b7467b58.js"
+    "static/js/main.37de7a58.js"
   ]
 }
