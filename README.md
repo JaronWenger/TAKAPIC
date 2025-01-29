@@ -1,6 +1,7 @@
 # 🤖 TAKAPIC
 
-Transform your photos into cinematic, AI-powered videos with TAKAPIC. Become a movie star now.
+[Takapic.com](https://takapic.com) lets you transform your photos into cinematic, AI-powered videos. Become a movie star now!
+
 
 <p align="center">
   <a href="https://takapic.com" target="_blank">
