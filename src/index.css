@@ -14,34 +14,190 @@ body {
   height: 100vh;
 }
 
-video {
+video.video-container {
   width: 100%;
-  height: 100%;
+  min-height: 45rem;
   object-fit: cover;
 }
 
-.takapic {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
 
-  font-size: 4rem;
-  color: white;  /* White text color */
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.5), 0 0 40px rgba(255, 255, 255, 0.6);
+.hero-card {
+  position: absolute; /* Positioned relative to the .hero-card-container */
+
+
+  transform: translate(-50%, -50%); /* Centers the card perfectly */
+  background-color: #000; /* Black card */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); /* Card shadow */
+  text-align: center;
+  width: 25%; /* Adjust as needed */
+  max-width: 90%; /* Makes it responsive */
+
+
+  top: 45%; /* Adjust the distance from the top */
+  left: 78%;
+
+  z-index: 2; /* Make sure it's above the video */
+
 }
-
-/* Media query for mobile devices */
-@media (max-width: 768px) {
-  .takapic {
-    font-size: 1.8rem;  /* Adjust the font size for smaller screens */
+@media screen and (max-width: 900px) {
+  .hero-card {
+    display: none; /* Hides the card at screen widths less than or equal to 900px */
   }
 }
+
+.hero-video {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px; /* Space between video and button */
+  object-fit: cover; /* Ensures the video covers the entire screen */
+  cursor: pointer; /* Indicating that the video is clickable */
+  
+}
+.hero-video:hover {
+  opacity: 0.9; /* Change the opacity to create a fade effect */
+}
+
+
+.upload-button3 {
+  padding: 12px 16px;
+  font-size: 1.2rem;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  width: 100%;
+  
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 100;
+  background: linear-gradient(
+    to right,
+    #4F82AF,
+    #4AA1A3,
+    #5979E0,
+    #C95E89,
+    #E58356,
+    #4F82AF
+  );
+  background-size: 200% auto;
+  color: white;
+  animation: gradient 10s linear infinite;
+  transition: transform 0.2s;
+  
+  /* Centers the button */
+  margin: -5px auto 0; /* Top margin of 40px and auto for horizontal centering */
+  display: block; /* Ensures it respects `margin: auto` */
+  text-align: center; /* Aligns text inside the button */
+}
+
+
+.upload-button3:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+
+/* Title Text */
+/* Title Text */
+.title-text {
+  position: absolute;
+  top: 17%; /* Adjust the distance from the top */
+  left: 5%;
+  width: 54%;
+  font-size: 1.4rem; /* Default font size for the rest of the text */
+  color: white;
+  z-index: 2; /* Make sure it's above the video */
+  text-align: left; /* Align the text to the left */
+  padding: 10px;
+  font-weight: bold;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+@media screen and (max-width: 900px) {
+  .title-text {
+    width: 80%; /* Adjusted width for smaller screens */
+  }
+}
+
+
+.big-line {
+  font-size: 4rem; /* Default size for big line */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;/* Bigger font size for the first line */
+  line-height: 1;
+}
+.small-break {
+  margin-bottom: 1rem; /* Adjust this value to control the space between lines */
+}
+
+
+@media (max-width: 768px) {
+  .title-text {
+    font-size: 1.2rem;
+    top: 17%; /* Smaller font for mobile screens */
+  }
+
+  .big-line {
+    font-size: 2.8rem; /* Smaller big line size for mobile */
+  }
+  .small-break {
+    margin-bottom: .6rem; /* Adjust this value to control the space between lines */
+  }
+}
+
+@media (max-width: 480px) {
+  .title-text {
+    font-size: 1rem;
+    top: 5rem; /* Even smaller font on very small screens */
+  }
+
+  .big-line {
+    font-size: 2rem; /* Smallest size for the big line on very small screens */
+  }
+  .small-break {
+    margin-bottom: .2rem; /* Adjust this value to control the space between lines */
+  }
+}
+
+.button-link {
+  text-decoration: underline;
+  cursor: pointer;
+ /* Smooth transition for color change */
+}
+
+.button-link:hover {
+  color: lightgrey; /* Change the text color to grey on hover */
+}
+
+
+
+
+.title-text strong {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Ensuring the bold text uses the same font */
+  font-weight: bold;
+  text-decoration: underline; /* Underlines the bold text */
+}
+
+.takapic {
+  text-align: left;
+  padding: 20px;
+}
+
+h1.title-text br {
+  margin: 10px 0; /* Adds space between lines */
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .overlay {
   position: absolute;
@@ -55,12 +211,12 @@ video {
 
 
 
-/* Call to Action Section */
+/* Call to Action Section ///////////////////////////////////////////////////////////////////////////// */
 .cta-section {
   background-color: #000;
   color: white;
-  padding: 40px 0;
-  margin-top: 20px;
+  padding: 0px 0;
+  margin-top: -70px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -70,8 +226,10 @@ video {
 
 /* Text styling */
 .cta-section p {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
+  font-size: 2.5rem;  /* Increased from previous size */
+  margin-top: 40px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 /* Button styling */
@@ -87,4 +245,522 @@ video {
 
 .cta-button:hover {
   background-color: #e03e00;
+}
+
+
+
+/* TOP LEFT LOGO //////////////////////////////////////////////////////////////////////////////////// */
+.spinning-logo {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+  z-index: 1000; /* Ensures logo stays on top of other content */
+  animation: spin 10s linear infinite; /* Adjust duration as needed */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.brand-text {  position: fixed;
+  top: 15px;
+  left: 65px;
+  font-size: 2.5rem;/* Adjust size as needed */
+  height: auto;
+  z-index: 1000; /* Ensures logo stays on top of other content */
+  background: linear-gradient(
+    to right,
+    #4F82AF,
+    #4AA1A3,
+    #5979E0,
+    #C95E89,
+    #E58356,
+    #4F82AF
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 200% auto;
+  animation: gradient 10s linear infinite;
+}
+
+@keyframes gradient {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.upload-button {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  padding: 12px 16px;
+  font-size: 1.2rem;
+
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+  background: linear-gradient(
+    to right,
+    #4F82AF,
+    #4AA1A3,
+    #5979E0,
+    #C95E89,
+    #E58356,
+    #4F82AF
+  );
+  background-size: 200% auto;
+  color: white;
+  animation: gradient 10s linear infinite;
+  transition: transform 0.2s;
+}
+.pricing-button {
+  position: fixed;
+  top: 15px;
+  right: 200px;
+  padding: 12px 16px;
+  font-size: 1.2rem;
+
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+
+  background: none; /* Removes the background */
+  color: white; /* Keeps the text color white */
+}
+@media (max-width: 768px) {
+  .pricing-button {
+    right: 20px; /* Move the button to the right */
+    font-size: 1rem;
+    opacity: 0; /* Slightly smaller font size */
+  }
+}
+.gallery-button {
+  position: fixed;
+  top: 15px;
+  right: 295px;
+  padding: 12px 16px;
+  font-size: 1.2rem;
+
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+
+  background: none; /* Removes the background */
+  color: white; /* Keeps the text color white */
+}
+@media (max-width: 768px) {
+  .gallery-button {
+    right: 20px; /* Move the button to the right */
+    font-size: 1rem; /* Slightly smaller font size */
+    opacity: 0;
+  }
+}
+.upload-button2 {
+  padding: 12px 16px;
+  font-size: 1rem;
+
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 100;
+  background: linear-gradient(
+    to right,
+    #4F82AF,
+    #4AA1A3,
+    #5979E0,
+    #C95E89,
+    #E58356,
+    #4F82AF
+  );
+  background-size: 200% auto;
+  color: white;
+  animation: gradient 10s linear infinite;
+  transition: transform 0.2s;
+  display: flex;
+  margin-left: 5%;
+  margin-top: 40px; /* Push the button 3% from the left */
+  align-self: flex-start;
+}
+
+.upload-button2:hover {
+  transform: scale(1.05);
+}
+
+
+.upload-button:hover {
+  transform: scale(1.05);
+}
+
+.upload-button-main {
+  padding: 12px 16px;
+  font-size: 2.2rem;
+
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 100;
+  background: linear-gradient(
+    to right,
+    #4F82AF,
+    #4AA1A3,
+    #5979E0,
+    #C95E89,
+    #E58356,
+    #4F82AF
+  );
+  background-size: 200% auto;
+  color: white;
+  animation: gradient 10s linear infinite;
+  transition: transform 0.2s;
+  display: block;
+  margin: 0 auto;
+}
+
+.upload-button-main:hover {
+  transform: scale(1.05);
+}
+
+/* Buttons */
+/* Logo button styling */
+.logo-button {
+  background-color: black; /* Black background */
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px; /* Padding to make the box bigger */
+  color: white;
+  font-size: 1.5rem; /* Font size */
+  z-index: 2000;
+  position: fixed; /* Fix it in the top left corner */
+  top: 15px; /* Distance from the top */
+  left: 17px; /* Distance from the left */
+  transform: none; /* Remove the centering transform */
+  transition: opacity 0.3s ease;
+  box-sizing: border-box; /* Ensure padding doesn't affect the overall size */
+  display: flex;
+  align-items: center; /* Vertically center content */
+  justify-content: center;
+  opacity: 0; /* Horizontally center content */
+}
+
+
+
+
+
+.template-image {
+  width: 100%;
+  max-width: 800px;  /* Adjust this value as needed */
+  margin: 20px auto;
+  display: block;
+}
+
+
+.bottom-spacing {
+  height: 100px;  /* Adjust this value to increase/decrease space */
+  width: 100%;
+}
+
+
+
+
+
+.genres {
+  display: flex; /* Arrange icons in a row */
+  justify-content: center; /* Center icons horizontally */
+  align-items: center; /* Align icons vertically */
+  gap: 10px; /* Space between icons */
+  position: relative; /* Enable positioning within this container */
+  top: -90px;
+
+  z-index: 1; /* Ensure icons appear above the wave SVG */
+}
+
+.genre-icon {
+  width: 120px; /* Adjust size for better visibility */
+  height: auto; /* Maintain aspect ratio */
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); /* Add subtle shadow */
+  transition: transform 0.3s ease; /* Smooth scaling on hover */
+}
+
+.genre-icon:hover {
+  transform: scale(1.2); /* Enlarge slightly on hover for interactivity */
+}
+
+/* Media Query for Tablets (768px and below) */
+@media (max-width: 768px) {
+  .genre-icon {
+    width: 70px; /* Smaller size for tablets */
+  }
+  .genres {
+    gap: 8px; /* Space between icons */
+  }
+}
+
+
+/* Media Query for Mobile Phones (480px and below) */
+@media (max-width: 480px) {
+  .genre-icon {
+    width: 50px; /* Even smaller size for mobile */
+  }
+  .genres {
+    gap: 3px; /* Space between icons */
+  }
+}
+
+
+
+
+
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wave-divider {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 200px; /* Adjust based on wave height */
+  overflow: hidden;
+  z-index: 1;  /* Make sure it's below the emojis */
+  
+}
+
+.wave-divider svg {
+  display: block;
+  width: 100%; /* Ensures full width */
+  height: 100%; /* Scales proportionally */
+
+}
+
+
+
+
+.video-card {
+  position: relative; /* Allow positioning of overlay */
+  border: 1px solid #ccc;
+  transition: border-color 0.1s ease;
+  overflow: hidden; /* Ensure the overlay stays within the card */
+}
+
+.video-card:hover {
+  border-color: rgb(235, 97, 23); 
+  cursor: pointer;/* Orange border on hover */
+}
+
+.video-card::before {
+  content: ''; /* Create the pseudo-element */
+  position: absolute; /* Position it over the card */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent dark overlay */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Smooth fade-in effect */
+}
+
+.video-card:hover::before {
+  opacity: 1; /* Show the overlay on hover */
+}
+
+.card-section p {
+  font-size: 2.5rem;  /* Increased from previous size */
+  margin-top: 0px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.social-icons-container {
+  display: flex;
+  justify-content: center;
+
+  padding-bottom: 1.5rem; /* Add padding if necessary */
+}
+
+.social-button {
+  background-color: transparent; /* Remove background */
+  border: none;
+  margin: 0 10px; /* Space between icons */
+  font-size: 3.5rem; /* Icon size */
+  color: rgb(255, 255, 255); /* Icon color */
+  cursor: pointer;
+  transition: color 0.3s; /* Smooth color change effect */
+}
+
+.social-button:hover {
+  color: #a8a8a8; /* Hover color for the icons */
+}
+
+.social-button:focus {
+  outline: none; /* Removes the focus outline */
+}
+
+
+
+
+
+
+
+
+
+
+/* THANK YOU PAGE /////////////////////////////////////////////////////////////////////////////// */
+/* Global Reset */
+body {
+  background-color: black; /* Black background */
+  color: white; /* White text for contrast */
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.thankyou-page {
+  padding: 20px;
+}
+
+.thankyou-heading {
+  font-size: 4rem;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: linear-gradient(
+    to right,
+    #4F82AF,
+    #4AA1A3,
+    #5979E0,
+    #C95E89,
+    #E58356,
+    #4F82AF
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradient 10s linear infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes gradient {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.thankyou-subtext {
+  font-size: 1.9rem;
+  color: lightgrey;
+  margin-bottom: 30px;
+}
+
+.return-button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background: linear-gradient(
+    to right,
+    #4F82AF,
+    #4AA1A3,
+    #5979E0,
+    #C95E89,
+    #E58356,
+    #4F82AF
+  );
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.return-button:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .thankyou-heading {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
+  }
+  .thankyou-subtext {
+    font-size: 1.2rem;
+  }
+  .return-button {
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
+}
+.upload-button5 {
+  padding: 12px 16px;
+  font-size: 1.2rem;
+
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 100;
+  background: linear-gradient(
+    to right,
+    #4F82AF,
+    #4AA1A3,
+    #5979E0,
+    #C95E89,
+    #E58356,
+    #4F82AF
+  );
+  background-size: 200% auto;
+  color: white;
+  animation: gradient 10s linear infinite;
+  transition: transform 0.2s;
+  display: block;
+  margin: 40px auto;
+}
+
+.upload-button5:hover {
+  transform: scale(1.05);
 }
